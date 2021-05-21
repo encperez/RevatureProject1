@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:3.13.6'
+    compile "org.thymeleaf:thymeleaf:3.0.11.RELEASE"
+
+    implementation 'junit:junit:4.13.1'
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.10.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'
+    implementation 'org.json:json:20171018'
+
+    // https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+    testImplementation 'org.mockito:mockito-inline:2.13.0'
+
+
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    testImplementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.29'
+
+
+
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+
+    implementation 'org.mongodb:mongodb-driver-sync:4.0.5'
+    testImplementation 'org.mongodb:mongodb-driver-sync:4.0.5'
+
+
+}
+
+test {
+    useJUnit()
+}

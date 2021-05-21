@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Request</title>
+
+    <script type = "text/javascript" src = "SubmitRequest.js"></script>
+</head>
+
+<body>
+
+<form id="SubmitRequest" method="post" action="/SubmitRequest" onSubmit = "validateForm()">
+    <h3>Enter the details of your reimbursement request!</h3>
+    <label for="requestTitle">title:</label><br>
+    <input type="text" id="requestTitle" name="requestTitle"><br>
+    <label for="details">Details:</label><br>
+    <input type="text" id="details" name="details"><br><br>
+    <label for="amount">Enter Reimbursement Amount</label><br>
+    <input type="number" id="amount" name="amount"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<a href="/EmployeeHome"> Back to previous screen. </a> <br>
+
+</body>
+</html>
