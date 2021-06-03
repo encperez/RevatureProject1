@@ -11,6 +11,10 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 * Javalin
 * Git
 * Gradle
+## Features
+* Employee/Manager login both getting seperate webpages that display the actions they can perform.
+* User can make a new Employee account
+* Employee can submit new reimbursement requests.
 ## To-do List
 * Add ability for Users to view their submitted reimbursements and their statuses.
-* Add managers ability to approve an employees submitted reimbursements.
+* Add managers ability to view and approve an employees submitted reimbursements.
